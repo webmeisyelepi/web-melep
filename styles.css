@@ -1,0 +1,211 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Home Section */
+#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#home input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#home input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Daftar Kos Section */
+#daftar-kos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#daftar-kos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.kos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kos-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kos-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.kos-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.kos-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.kos-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.kos-item a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.kos-item a:hover {
+    color: #ffdd57;
+}
+
+/* Tentang Kami Section */
+#tentang-kami {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e9f7e5;
+}
+
+#tentang-kami h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#tentang-kami p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Kontak Section */
+#kontak {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#kontak h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#kontak p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input[type="email"],
+form textarea {
+    padding: 15px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+}
+
+footer p {
+    margin: 0;
+}
